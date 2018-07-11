@@ -1,6 +1,6 @@
 {% set name = "pywinrm" %}
-{% set version = "0.2.2" %}
-{% set sha256 = "3030f700fbd6d06f715d4374c10b3586624bccca003b7075dd281c875705ac1b" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "799fc3e33fec8684443adf5778860388289102ea4fa1458f1bf307d167855573" %}
 
 package:
   name: {{ name|lower }}
