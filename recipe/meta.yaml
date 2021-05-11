@@ -1,6 +1,6 @@
 {% set name = "pywinrm" %}
-{% set version = "0.4.1" %}
-{% set sha256 = "4ede5c6c85b53780ad0dbf9abef2fa2ea58f44c82256a84a63eae5f1205cea81" %}
+{% set version = "0.4.2" %}
+{% set sha256 = "e7865ec5e46e7fedb859c656cfaba4fcf669de7c042b5a7d8a759544636bcfb7" %}
 
 package:
   name: {{ name|lower }}
@@ -14,10 +14,10 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
@@ -36,7 +36,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Python library for Windows Remote Management (WinRM)'
+  summary: Python library for Windows Remote Management (WinRM)
 
   description: |
     pywinrm is a Python client for the Windows Remote Management (WinRM) service. 
