@@ -18,14 +18,14 @@ build:
 
 requirements:
   host:
-    - python
+    - python =2.7|>3.5
     - pip
   run:
-    - python
+    - python =2.7|>3.5
     - six
     - xmltodict
     - requests >=2.9.1
-    - requests_ntlm >=0.3.0
+    - requests_ntlm >=1.0.0
 
 test:
   imports:
