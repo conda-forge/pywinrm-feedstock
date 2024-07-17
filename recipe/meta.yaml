@@ -18,18 +18,21 @@ build:
 
 requirements:
   host:
-    - python =2.7|>3.5
+    - python >=3.8
     - pip
   run:
-    - python =2.7|>3.5
-    - six
+    - python >=3.8
     - xmltodict
     - requests >=2.9.1
-    - requests_ntlm >=1.0.0
+    - requests_ntlm >=1.1.0
 
 test:
   imports:
     - winrm
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/diyan/pywinrm
